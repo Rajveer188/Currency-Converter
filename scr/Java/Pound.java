@@ -5,9 +5,10 @@ import java.util.Scanner;
 
 public class Pound {
     Scanner inp = new Scanner(System.in);
-    public void howMuch(){
+
+    public void howMuch() {
         System.out.println("how much money you want to convert");
-        int n  = inp.nextInt();
+        int n = inp.nextInt();
         poundTo(n);
     }
 
@@ -40,40 +41,31 @@ public class Pound {
     }
 
     private void poundToDollar(int n) {
-        float exchangeRate = 1.26f; // Current exchange rate between INR and USD.
-        System.out.println(n+" pound in Dollar is "+String.format("%.2f", n*exchangeRate)+"$");
+        float exchangeRate = 1.26f;
+        System.out.println(n + " pound in Dollar is " + String.format("%.2f", n * exchangeRate) + "$");
     }
 
     private void poundToEuro(int n) {
-        float exchangeRate = 1.17f; // Current exchange rate between INR and EUR.
-//        System.out.println(String.format("%.2f", INR / exchangeRate));
-        System.out.println(n +" pound in Euro is "+String.format("%.2f", n * exchangeRate)+"€");
-//        System.out.println(n +" pound in Euro is "+n * exchangeRate+"€");
+        float exchangeRate = 1.17f;
+        System.out.println(n + " pound in Euro is " + String.format("%.2f", n * exchangeRate) + "€");
 
-//        DecimalFormat decimalFormat = new DecimalFormat("#.00");
-//        System.out.print(decimalFormat.format(n * exchangeRate));
-//
     }
 
     private void poundToRupee(int n) {
-        float exchangeRate = 103.83f; // Current exchange rate between INR and AED.
-//        System.out.println(String.format("%.2f", INR / exchangeRate));
-        System.out.println( n+" pound in rupee is "+String.format("%.2f", n * exchangeRate)+"₹");
-
+        float exchangeRate = 103.83f;
+        System.out.println(n + " pound in rupee is " + String.format("%.2f", n * exchangeRate) + "₹");
 
     }
 
     private void poundToDinar(int n) {
-        float exchangeRate = 0.39f; // Current exchange rate between INR and AED.
-//        System.out.println(String.format("%.2f", INR / exchangeRate));
-        System.out.println(n +" pound in Dinar is "+String.format("%.2f", n * exchangeRate)+" Dinar");
+        float exchangeRate = 0.39f;
+        System.out.println(n + " pound in Dinar is " + String.format("%.2f", n * exchangeRate) + " Dinar");
 
     }
 
     private void poundToDirham(int n) {
-        float exchangeRate = 4.62f; // Current exchange rate between INR and AED.
-//        System.out.println(String.format("%.2f", INR / exchangeRate));
-        System.out.println(n +" pound in Dirhar is "+String.format("%.2f", n * exchangeRate)+" Dirham");
+        float exchangeRate = 4.62f;
+        System.out.println(n + " pound in Dirhar is " + String.format("%.2f", n * exchangeRate) + " Dirham");
 
     }
 }
